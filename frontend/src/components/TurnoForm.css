@@ -1,0 +1,151 @@
+/* src/components/TurnoForm.css */
+.form-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container button,
+  .form-container .react-datepicker-wrapper {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container .error {
+    border-color: #e74c3c;
+  }
+  
+  .form-container .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .form-container button:hover:enabled {
+    background-color: #218838;
+  }
+  
+  .success-message {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+    }
+  
+    .form-container input,
+    .form-container select,
+    .form-container button {
+      font-size: 14px;
+    }
+  }
+
+  /* src/components/TurnoForm.css */
+
+/* ... (resto de tus estilos) ... */
+
+/* Estilos para ocultar el botón verde del selector de fecha */
+.react-datepicker__close-icon {
+    display: none;
+  }
+  
+  /* Estilos generales para el selector de fecha */
+  .react-datepicker {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .react-datepicker__header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .react-datepicker__current-month,
+  .react-datepicker__day-name {
+    color: white;
+  }
+  
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    background-color: #28a745 !important;
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #218838;
+    color: white;
+  }
+  
+  .react-datepicker__triangle {
+    display: none; /* Ocultar el triángulo superior del selector */
+  }
+  
+  /* Ajuste del ancho de los meses y años */
+  .react-datepicker__month-dropdown-container,
+  .react-datepicker__year-dropdown-container {
+    width: auto;
+  }
+  
+  /* Estilo del contenedor de entrada de fecha */
+  .form-container .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  /* Ajuste de selectores para evitar solapamientos */
+  .react-datepicker__month-container {
+    padding: 10px;
+  }
+  
+  .react-datepicker__header {
+    padding-top: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .react-datepicker {
+      width: 100%;
+    }
+  }
+
+
+/* Ocultar el botón verde dentro del selector de fecha */
+.react-datepicker__close-icon {
+    display: none;
+  }
+  
+  
